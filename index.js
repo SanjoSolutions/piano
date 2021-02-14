@@ -18,6 +18,7 @@ const melody = [
 
 async function main() {
   const container = document.createElement('div')
+  container.classList.add('note')
   document.body.appendChild(container)
 
   let index = 0

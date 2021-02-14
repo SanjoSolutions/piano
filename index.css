@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.note {
+  border: 1px solid black;
+  font-size: 3rem;
+  text-align: center;
+  width: 6.25rem;
+  height: 7.5rem;
+  line-height: 7.5rem;
+}
