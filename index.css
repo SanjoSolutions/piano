@@ -7,6 +7,12 @@ body {
   justify-content: center;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .note {
   border: 1px solid black;
   font-size: 3rem;
@@ -14,4 +20,11 @@ body {
   width: 6.25rem;
   height: 7.5rem;
   line-height: 7.5rem;
+  margin-right: 0.5rem;
+}
+
+.musical-notation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
