@@ -71,11 +71,19 @@ export class PianoLearningProgram {
   }
 
   _createDOM() {
+    this.container = this._createContainer()
     this.noteContainer = this._createNoteContainer()
     this.musicalNotationContainer = this._createMusicalNotationContainer()
 
-    this.domRoot.appendChild(this.noteContainer)
-    this.domRoot.appendChild(this.musicalNotationContainer)
+    this.container.appendChild(this.noteContainer)
+    this.container.appendChild(this.musicalNotationContainer)
+    this.domRoot.appendChild(this.container)
+  }
+
+  _createContainer() {
+    const container = document.createElement('div')
+    container.classList.add('container')
+    return container
   }
 
   _createNoteContainer() {
@@ -85,7 +93,9 @@ export class PianoLearningProgram {
   }
 
   _createMusicalNotationContainer() {
-    return document.createElement('div')
+    const container = document.createElement('div')
+    container.classList.add('musical-notation')
+    return container
   }
 
   async _renderCurrentNote() {
